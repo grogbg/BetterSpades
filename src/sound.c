@@ -290,7 +290,7 @@ void sound_init() {
 	sound_load(&sound_hurt_fall, "wav/fallhurt.wav", 0.1F, 32.0F);
 
 	sound_load(&sound_pickup, "wav/pickup.wav", 0.1F, 1024.0F);
-	sound_load(&sound_pickup, "wav/chat.wav", 0.1F, 1024.0F);
+	sound_load(&sound_chat, "wav/chat.wav", 0.1F, 1024.0F);
 	sound_load(&sound_horn, "wav/horn.wav", 0.1F, 1024.0F);
 
 	sound_load(&sound_rifle_shoot, "wav/semishoot.wav", 0.1F, 96.0F);
