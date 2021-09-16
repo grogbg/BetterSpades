@@ -1808,7 +1808,8 @@ static void hud_ingame_keyboard(int key, int action, int mods, int internal) {
 					msg.chat_type = (chat_input_mode == CHAT_ALL_INPUT) ? CHAT_ALL : CHAT_TEAM;
 					strcpy(msg.message, chat[0][0]);
 					network_send(PACKET_CHATMESSAGE_ID, &msg,
-								 sizeof(msg) - sizeof(msg.message) + strlen(chat[0][0]) + 1);
+								 sizeof(msg) - sizeof(msg.message) + strlen(chat[0][0]) + 1);                 
+					sound_create(SOUND_LOCAL, &sound_chat, 0.0F, 0.0F, 0.0F);
 				}
 				window_textinput(0);
 				chat_input_mode = CHAT_NO_INPUT;
