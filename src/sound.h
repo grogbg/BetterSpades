@@ -69,6 +69,7 @@ extern struct Sound_wav sound_explode_water;
 extern struct Sound_wav sound_grenade_bounce;
 extern struct Sound_wav sound_grenade_pin;
 
+extern struct Sound_wav sound_chat;
 extern struct Sound_wav sound_pickup;
 extern struct Sound_wav sound_horn;
 
